@@ -75,8 +75,8 @@ int main(void)
 
 	//chequeo si i es mayor al tamaño del array (Limitadores)
 
-	if(i > sizeof(secuencia)/sizeof(secuencia[0])) { i=0;}
-	if(i<0){ i = sizeof(secuencia)/sizeof(secuencia[0]);}
+	if(i >= sizeof(secuencia)/sizeof(secuencia[0])) { i=0;}
+	if(i<0){ i = (sizeof(secuencia)/sizeof(secuencia[0]))-1;}
 
   }
 }
