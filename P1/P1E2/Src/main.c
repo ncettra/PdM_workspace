@@ -40,7 +40,7 @@ int main(void)
   BSP_PB_Init(BUTTON_USER, BUTTON_MODE_GPIO);
 
   uint8_t secuencia[3] = {LED1,LED2,LED3}; //Los leds estan representados y ordenados en un enum, por ende los puedo trabajar con numeros (LED1 = 0, LED2= 1, LED3 = 3)
-  uint8_t i = 0;
+  int8_t i = 0;
   uint8_t ordenDeSecuencia = 0; //  0 = secuencia 1;   1 = secuencia 2
 
   while (1)
