@@ -49,9 +49,7 @@ int main(void)
 	  i++;
 
 	  //chequeo si i es mayor al tamaño del array
-	  if(i > sizeof(secuencia)/sizeof(secuencia[0])) {
-		  i=0;
-	  }
+	  if(i >= sizeof(secuencia)/sizeof(secuencia[0])) {  i=0;  }
   }
 }
 
