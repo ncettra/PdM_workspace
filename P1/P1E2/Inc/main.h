@@ -1,3 +1,35 @@
+
+Skip to content
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+@ncettra
+ncettra /
+PdM_workspace
+Public
+
+Cannot fork because you own this repository and are not a member of any organizations.
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+PdM_workspace/P1/P1E2/Inc/main.h
+@ncettra
+ncettra Ordeno el directorio
+Latest commit 855d53d Mar 7, 2023
+History
+1 contributor
+58 lines (48 sloc) 2.43 KB
 /**
   ******************************************************************************
   * @file    UART/UART_Printf/Inc/main.h
@@ -56,3 +88,20 @@
 #endif /* __MAIN_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+PdM_workspace/main.h at main · ncettra/PdM_workspace

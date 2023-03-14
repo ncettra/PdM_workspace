@@ -64,8 +64,8 @@ all: main-build
 main-build: P1E2.elf secondary-outputs
 
 # Tool invocations
-P1E2.elf P1E2.map: $(OBJS) $(USER_OBJS) /home/nico/Documentos/stm32Examples/PdM_workspace/P1E2/STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "P1E2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E2/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="P1E2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+P1E2.elf P1E2.map: $(OBJS) $(USER_OBJS) C:\Users\Nicolas\Documents\GITHUB\PdM_workspace\P1\P1E2\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "P1E2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Nicolas\Documents\GITHUB\PdM_workspace\P1\P1E2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="P1E2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

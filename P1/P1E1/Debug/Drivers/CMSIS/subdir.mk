@@ -15,13 +15,13 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Drivers/CMSIS/%.o Drivers/CMSIS/%.su: ../Drivers/CMSIS/%.c Drivers/CMSIS/subdir.mk
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Inc -I"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E1/Drivers/CMSIS/Include" -I"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E1/Drivers/BSP/STM32F4xx_Nucleo_144" -I"/home/nico/Documentos/stm32Examples/PdM_workspace/P1E1/Drivers/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+Drivers/CMSIS/%.o Drivers/CMSIS/%.su Drivers/CMSIS/%.cyclo: ../Drivers/CMSIS/%.c Drivers/CMSIS/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Inc -I"C:/Users/Nicolas/Documents/GITHUB/PdM_workspace/P1/P1E1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/Nicolas/Documents/GITHUB/PdM_workspace/P1/P1E1/Drivers/CMSIS/Include" -I"C:/Users/Nicolas/Documents/GITHUB/PdM_workspace/P1/P1E1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Nicolas/Documents/GITHUB/PdM_workspace/P1/P1E1/Drivers/BSP/STM32F4xx_Nucleo_144" -I"C:/Users/Nicolas/Documents/GITHUB/PdM_workspace/P1/P1E1/Drivers/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
 clean: clean-Drivers-2f-CMSIS
 
 clean-Drivers-2f-CMSIS:
-	-$(RM) ./Drivers/CMSIS/system_stm32f4xx.d ./Drivers/CMSIS/system_stm32f4xx.o ./Drivers/CMSIS/system_stm32f4xx.su
+	-$(RM) ./Drivers/CMSIS/system_stm32f4xx.cyclo ./Drivers/CMSIS/system_stm32f4xx.d ./Drivers/CMSIS/system_stm32f4xx.o ./Drivers/CMSIS/system_stm32f4xx.su
 
 .PHONY: clean-Drivers-2f-CMSIS
 
