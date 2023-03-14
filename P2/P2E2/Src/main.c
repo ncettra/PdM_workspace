@@ -53,15 +53,15 @@ int main(void)
   while (1)
   {
 
-	  if(!delayRead(&delayLed1)){
+	  if(delayRead(&delayLed1)){
 		  BSP_LED_Toggle(LED1);
 		  delayWrite(&delayLed1,LED1_DELAY);
 	  }
-	  if(!delayRead(&delayLed2)){
+	  if(delayRead(&delayLed2)){
 	  		  BSP_LED_Toggle(LED2);
 	  		  delayWrite(&delayLed2,LED2_DELAY);
 	  }
-	  if(!delayRead(&delayLed3)){
+	  if(delayRead(&delayLed3)){
 	  		  BSP_LED_Toggle(LED3);
 	  		  delayWrite(&delayLed3,LED3_DELAY);
 	  }
