@@ -57,12 +57,13 @@ int main(void)
   {
 	  if(delayRead(&delayLed)){
 
-		  status=!status;
+
 		  BSP_LED_Toggle(secuencia[i]);
 		  if(status){
 			  i++;
 			  delayWrite(&delayLed,LED_DELAY);
 		  }
+		  status=!status;
 
 	  }
 
