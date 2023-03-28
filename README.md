@@ -1,1 +1,1 @@
-Repositorio para la materia procesador de microcontroladores
+Repositorio para la materia programacion de microcontroladores
